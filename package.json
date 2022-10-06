@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@changesets/cli": "^2.25.0",
     "lerna": "^5.5.0"
   }
 }
