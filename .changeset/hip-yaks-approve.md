@@ -1,5 +1,0 @@
----
-"one": major
----
-
-first test!
