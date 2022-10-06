@@ -4,6 +4,14 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "boot": "yarn --frozen-lockfile && yarn bootstrap",
+    "bootstrap": "yarn lerna:bootstrap",
+    "lerna:bootstrap": "lerna bootstrap --use-workspaces",
+    "build": "lerna run build --stream",
+    "build:packages": "yarn build",
+    "release": "changeset publish"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.25.0",
     "lerna": "^5.5.0"
